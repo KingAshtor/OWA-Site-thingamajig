@@ -1,19 +1,17 @@
-const fs = require('fs');
-
-let quoteList = ["this is a quote", "this is another quote"]
-let quote
+let quoteList = ["this is a quote", "this is another quote", ];
+let quote;
 
 function randomQuote() {
-quote = math.floor(quoteList.length()*math.random())
-console.log(quote);
-  //set text to quote
+  quote = quoteList[Math.floor(quoteList.length * Math.random())]
+  console.log(quote);
+  document.getElementById("quote").innerHTML = quote
 }
 
 function submit() {
-  addQuote(/*input from form goes here*/);
+  let input = document.getElementById("input").value
+  addQuote(input);
 }
 
 function addQuote(quote) {
-quoteList.append(quote);
-//write quoteList to JSON
+  quoteList.push(quote);
 }
