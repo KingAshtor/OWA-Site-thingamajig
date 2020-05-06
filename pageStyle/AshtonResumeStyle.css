@@ -18,8 +18,8 @@ img {
 #resumeContent {
   border-style: dashed;
   border-color: navy;
-  /* margin-left: 100px;
-  margin-right: 100px; */
+  margin-left: 100px;
+  margin-right: 100px;
   background-color: white;
 }
 
@@ -33,7 +33,6 @@ img {
 }
 
 #certContainer {
-  width: auto;
 }
 
 #certBlock {
