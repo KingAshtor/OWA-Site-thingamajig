@@ -4,23 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>Quote</title>
-  <link rel="stylesheet" type="text/css" href="../pageStyle/Style.css" />
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../layoutCss/websiteLayout.css" />
+  <link rel="stylesheet" type="text/css" href="../pageStyle/style.css" />
   <script src="quote.js"></script>
 </head>
 
-<body>
+<body onload="randomQuote()">
 
   <div id="quoteContainer">
     <div id="quoteBox">
-      <p id="quote"> Quote goes here.</p>
+      <p id="quote"></p>
     </div>
-    <div id="inputBox">
-      <button type="button" name="randomQuote" id="randomQuote" onclick="randomQuote()"> New Quote </button><br>
-      <input type="text" name="input" value=""><br>
-      <button type="button" name="submit" id="submit" onclick="submit()"> Submit </button><br>
-    </div>
-  </div>
 
+    <div class="hero-image">
+        <button type="button" name="randomQuote" id="randomQuote" onclick="randomQuote()"> New Quote </button><br>
+        <input type="text" name="input" value=""><br>
+        <button type="button" name="submit" id="submit" onclick="submit()"> Submit </button><br>
+      </div>
 </body>
 
 </html>
